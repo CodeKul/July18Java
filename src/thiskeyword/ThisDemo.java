@@ -1,7 +1,7 @@
 package thiskeyword;
 //this keyword
 //1. it is used to refer current class instance variable
-//2. it is used to invoke current class methods
+////2. it is used to invoke current class methods
 //3. it is used to invoke current class construction
 //4. it is used to pass argument in method call
 //5. it is used to return as an object
