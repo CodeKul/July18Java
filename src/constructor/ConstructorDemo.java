@@ -1,5 +1,7 @@
 package constructor;
 
+import statickeyword.Employee;
+
 /**
  * constructor -> it is special of function which invoke automatically
  *                  when you create object of class
@@ -55,6 +57,10 @@ public class ConstructorDemo {
         System.out.println(obj1);
 
 //        ConstructorDemo1 obj = new ConstructorDemo1();
+//        Employee employee= new Employee();
+//        employee.PI =3.20;
+
+        Employee.show();
 
     }
 }
