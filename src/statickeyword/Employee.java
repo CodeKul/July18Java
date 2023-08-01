@@ -4,13 +4,13 @@ public class Employee {
 
     int id;
     String name;
-    static String companyName;
+    static String companyName="ABC";
 
     static {
-        companyName ="ABC";
+        companyName ="XYZ";
         System.out.println("In static block");
     }
-   public  final Double PI = 3.142;
+   public static final Double PI = 3.142;
     public Employee(int id, String name) {
         this.id = id;
         this.name = name;
