@@ -1,6 +1,5 @@
 package controlflowstatement;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -16,7 +15,7 @@ public class ForLoop {
             System.out.println(i);
         }
 
-        int i = 10;
+//        int i = 10;
 
         int[] arr = new int[4];//primitive
         arr[0] = 10;
@@ -44,7 +43,21 @@ public class ForLoop {
 
 
         list.forEach(System.out::println);
-
+        System.out.println();
+//        for (int i = 1; i <= 4; i++) {
+//            for (int j = 1; j <= 4; j++) {
+//                System.out.print(" *");
+//            }
+//            System.out.println();
+//        }
+        int i = 1;
+        while (i <= 4){
+            i++;
+            for (int j = 1; j <= 4; j++) {
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
 
     }
 }
