@@ -12,7 +12,7 @@ public class ScannerDemo {
         i = scanner.nextInt();
         System.out.println("enter value 2");
         j = scanner.nextInt();
-        System.out.println(i+" "+j);
+        System.out.println(i + " " + j);
 
     }
 }
