@@ -1,10 +1,10 @@
 Throwable
-       Exceptio
-           IOException
+       Exception
+           IOException(Checked)
                -FileNotFoundException
            SQLException
            ClassNotFoundException
-           RunTimeException
+           RunTimeException (UnChecked)
                    - ArithmeticException
                    - NumberFormatException
                    - NullPointerException
@@ -17,3 +17,28 @@ Throwable
         - VirtualMachineError
         - OutOfMemoryError
         - StackOverFlowError
+
+
+               try {
+                    int i = 1 / 1;
+                    System.out.println(i);
+                    try {
+                        String str = "5";
+                        Integer j = Integer.parseInt(str);
+                        System.out.println(j);
+                    }catch (NumberFormatException e){
+                        e.printStackTrace();
+                    }
+                    String str = null;
+                    System.out.println(str.toUpperCase());
+
+                } catch (Exception e) {
+                    System.out.println("In NumberFormatException"+e.getMessage());
+                } catch (ArithmeticException e){
+                    System.out.println("In ArithmeticException"+e.getMessage());
+                } catch (NumberFormatException e){
+                    System.out.println("In Exception"+e.getMessage());
+                } finally
+                {
+                    System.out.println("in finally");
+                }
