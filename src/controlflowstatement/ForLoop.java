@@ -25,21 +25,21 @@ public class ForLoop {
 
         System.out.println(arr.length);
 
-        for (int j=0;j<arr.length;j++){ //traditional for loop
+        for (int j = 0; j < arr.length; j++) { //traditional for loop
             System.out.println(arr[j]);
         }
 
         System.out.println();
-        for(int j = arr.length-1; j>=0;j--){
+        for (int j = arr.length - 1; j >= 0; j--) {
             System.out.println(arr[j]);
         }
 
         System.out.println();
-        for (int k:arr) { // enhanced for loop
+        for (int k : arr) { // enhanced for loop
             System.out.println(k);
         }
 
-        List<Integer> list = Arrays.asList(1,2,3,4); //collection framework
+        List<Integer> list = Arrays.asList(1, 2, 3, 4); //collection framework
 
 
         list.forEach(System.out::println);
@@ -51,7 +51,7 @@ public class ForLoop {
 //            System.out.println();
 //        }
         int i = 1;
-        while (i <= 4){
+        while (i <= 4) {
             i++;
             for (int j = 1; j <= 4; j++) {
                 System.out.print(" *");
