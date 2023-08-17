@@ -1,6 +1,6 @@
 package filehandling;
 
-import java.io.FileNotFoundException;
+import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -8,15 +8,18 @@ import java.io.IOException;
 public class FileWriterDemo {
     public static void main(String[] args) {
         FileWriter fileWriter=null;
+        BufferedWriter bufferedWriter = null;
         try {
             fileWriter = new FileWriter(
                     "/home/vaibhav/JavaBatches/July18/src/filehandling/test2.txt");
-            fileWriter.write("Welcome");
+            bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.write("Welcome");
             System.out.println("file write successfully");
         } catch (IOException e) {
             throw new RuntimeException(e);
         } finally {
             try {
+                bufferedWriter.close();
                 fileWriter.close();
             } catch (IOException e) {
                 throw new RuntimeException(e);
