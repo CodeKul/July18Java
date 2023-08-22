@@ -45,3 +45,9 @@ class Test{
         t1.setPriority(10);
     }
 }
+
+//new - where you create object of thread and before invocation of start
+//runnable  - after start method invoke but thread scheduler is not selected as running thread
+//running - after thread scheduler select as running thread
+//blocked/waiting -  it is not in running state but still alive
+//death - after run method execution completed
