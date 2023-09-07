@@ -7,6 +7,12 @@
 
      - ArrayList(C)                    -PriorityQueue(C)                  - HashSet(C)
      - LinkedList(C)     ------------   - Deque(I)                           - LinkedHashSet(C)
-     - Vector(C)                        - ArrayDeque(C)
+     - Vector(C)                        - ArrayDeque(C)                       -TreeSet
            - Stack(C)
 
+
+  Map(I)
+
+  HashMap(C)
+
+     TreeMap(C)

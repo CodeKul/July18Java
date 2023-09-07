@@ -1,9 +1,6 @@
 package collectionframwork;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class Student {
 
@@ -30,6 +27,9 @@ public class Student {
         list.add(obj2);
         list.add(obj3);
         list.add(obj4);
+
+        Collections.sort(list);
+
 
         list.forEach(s -> {
             System.out.println(s.id + " " + s.name + " " + s.address);

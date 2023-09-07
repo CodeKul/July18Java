@@ -17,11 +17,13 @@ public class ArrayListDemo {
         arr[0] = 10;
 
         ArrayList<Integer> arrayList = new ArrayList<>();
-        arrayList.add(10);
-        arrayList.add(10);
-        arrayList.add(30);
-        arrayList.add(40);
+        arrayList.add(120);
+        arrayList.add(150);
+        arrayList.add(302);
+        arrayList.add(403);
         System.out.println(arrayList);
+
+
 
         List list = new ArrayList();
         list.add(10);
