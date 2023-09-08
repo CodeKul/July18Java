@@ -1,6 +1,7 @@
 package collectionframwork;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ArrayListMethods {
@@ -12,6 +13,7 @@ public class ArrayListMethods {
         list1.add(30);
         list1.add(40);
 
+        Collections.sort(list1);
 
         System.out.println(list1.get(0));
         System.out.println(list1.contains(109));
