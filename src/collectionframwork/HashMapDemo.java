@@ -24,6 +24,8 @@ public class HashMapDemo {
 
         List<Map<Integer, String>> list = Arrays.asList(map1, map2, map3);
 
+        System.out.println(map1.get(1));
+
         list.forEach(s -> {
             s.forEach((k, v) -> {
                 System.out.println(k + " " + v);
