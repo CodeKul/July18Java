@@ -7,9 +7,14 @@ import java.util.Map;
 public class WordCount {
     public static void main(String[] args) {
 
-        String str = "I am in Pune";
+        String str = "V-VS/2023/002675";
 
-        String[] strings = str.split(" ");
+        String[] strings = str.split("/");
+
+
+        for (String s :strings){
+            System.out.println(s);
+        }
 
         Map<String,Integer> map = new LinkedHashMap<>();
 
