@@ -3,5 +3,5 @@
 2. Method references
 3. Default and static keyword in interface
 4. Optional Keyword
-5. LocalDate,LocalTime,LocalDateTime,Duration,Period
+5. LocalDate,LocalTime,LocalDateTime,Duration,Period,Zone
 6. Stream API
