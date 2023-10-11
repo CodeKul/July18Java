@@ -4,6 +4,7 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
 
 //1. arraylist uses dynamic array to store element
 //2. arraylist maintain insertion order
@@ -34,9 +35,13 @@ public class ArrayListDemo {
         arr1.add("Pune");
         arr1.add("Mumbai");
 
-        arr1.forEach(s->{
-            System.out.println(s);
-        });
+        Consumer<String> consumer = new Consumer<String>() {
+            @Override
+            public void accept(String s) {
+                System.out.println(s);
+            }
+        };
+        arr1.forEach(consumer);
 
 //        try {
 //            System.out.println(getCapacity(arrayList));
